@@ -43,6 +43,16 @@ table, th, td {
     border-collapse: collapse;
     border: 1px solid black;
 }
+.column {
+    float: left;
+    width: 30%;
+    padding: 20px;
+}
+@media screen and (max-width: 600px){
+    .column {
+        width: 100%;
+    }
+}
         
     </style>
 <head>
@@ -58,11 +68,7 @@ table, th, td {
                 <div class="header" >
                     <h1>Axola Lose</h1>
                     <img src="image2.jpg" style="width:150px;">
-                    <ul class="menu">
-                        <li><a href="#" >Menu item 1</a></li>
-                        <li><a href="#" >Menu item 2</a></li>
-                        <li><a href="#" >Menu item 3</a></li>
-                    </ul>
+                    
                 </div>
                 <div class="main" >
                     <div class="Newcastle" style="padding-top:16px;">
@@ -76,51 +82,48 @@ table, th, td {
                         <h2>A foreign language</h2>
                         <p> I like the country because the capital city of it is Paris (City of love). 
                              </p>
-                             <table style="width:50%;">
+                             <table style="width:50px;">
                             <tr>
                                 <th>English</th>
                                 <th>French</th>
-                                <th>French Pronounciation</th>
                             </tr>
                             <tr>
                                 <td>My name</td>
                                 <td>Je m'appelle</td>
-                                <td>Je =zhuh</td>
                             </tr>
                             <tr>
                                 <td>Im hungry</td>
                                 <td>Qu'est - ce que j'ai faim</td>
-                                <td>J'ai faim</td>
                             </tr>
                             <tr>
                                 <td>Goodbye</td>
                                 <td>Au revoir</td>
-                                <td>Au revoir</td>
                             </tr>
                             </table>
                     </div>
-                    <div class="content" >
+                    <div class="row clearfix" >
                         <h2>Historic places in Cape Town</h2>
-                        <img src="South-African-parliament.jpg"style="width:150px; height:150px;">
-                        <h2>Parliament of South Africa</h2>
-                        <p>The House of Parliament of South Africa are situated in Cape Town.</br>
+                        <div class="column clearfix">
+                        <img class="left"src="South-African-parliament.jpg"style="width:150px; height:150px;">
+                        The House of Parliament of South Africa are situated in Cape Town.</br>
                              The buildings consits of three main sections the original building,<br>
                              was completed in 1884 and conditions constructed in the 1902 and 1980s.
-                        </p>
-                        <img src="the_castle_of_good_hope_cape_town.jpg"style="width:150px; height:150px;">
-                        <h2>The Castle of Good Hope</h2>
-                        <p>A cape town landmark, the Castle of Good Hope, is a prime example of a "star fort".</br>
+                    </div>
+                    <div class="column clearfix">
+                        <img class="left"src="the_castle_of_good_hope_cape_town.jpg"style="width:150px; height:150px;">
+                        A cape town landmark, the Castle of Good Hope, is a prime example of a "star fort".</br>
                              Built between 1666 and 1679 by the Dutch East India Company. <br>
                              It's the oldest existing colonial building in South Africa.</br> 
                              It's position marks the original shoreline <br>
                              before years of land reclamation changed the Table Bay costline.
-                        </p>
-                        <img src="1200px-Ayuntamiento,_Ciudad_del_Cabo,_Sudáfrica,_2018-07-19,_DD_08.jpg"style="width:200px; height: 200px;">
-                        <h2>Cape Town City Hall</h2>
-                        <p>Cape Town city hall is a large Edwardian building in cape town city centre which was built in 1905.<br>
+                        
+                    </div>
+                    <div class="column clearfix">
+                        <img class="left"src="1200px-Ayuntamiento,_Ciudad_del_Cabo,_Sudáfrica,_2018-07-19,_DD_08.jpg"style="width:200px; height: 200px;">
+                        Cape Town city hall is a large Edwardian building in cape town city centre which was built in 1905.<br>
                              It is located on the Grand Parade to the west of the west of the castle and <br>
                              is built from honey - coloured oolitic limestone imported from Bath in England.
-                        </p>
+                        </div>
                     </div>
                 </div>
                 <div class="footer" >
