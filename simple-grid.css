@@ -17,12 +17,44 @@ body {
   top: 0;
   font-size: 100%;
 }
-
+.header {
+  background-color: lightgreen;
+  padding: 1em;
+  background-image: url(/home/codex/Documents/projects/basic-webpage/City-And-Table-Mountain-Lights.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+table,
+th,
+td {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+.column {
+  float: left;
+  width: 30%;
+  padding: 20px;
+}
+.left {
+  float: left;
+   }
+  .right {
+    float: right;
+  }
+  .language{
+    width: 100%;
+    margin: 5px;
+    overflow:auto;
+}
 /* ROOT FONT STYLES */
 
 * {
   font-family: 'Lato', Helvetica, sans-serif;
-  color: white;
+  color: black;
   line-height: 1.5;
 }
 
@@ -169,7 +201,7 @@ p {
 }
 
 .col-12-sm {
-  width: 96%;
+  width: 100%;
 }
 
 .row::after {
