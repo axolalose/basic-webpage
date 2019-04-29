@@ -9,10 +9,34 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <script src="main.js"></script>
 </head>
+<style>
+    body {
+        background-image: url("waterfall2.jpg");
+        background-size: 100%;
+        padding: 1em;
+        background-repeat: no-repeat;
+    }
+
+    .right {
+        float: right;
+        display: block;
+        width: 60%;
+    }
+</style>
 
 <body>
-    <div><a href="my-webpage.html">my webpage</a></div>
-    <div><a href="my-webpage grid.html">my webpage grid</a></div>
+    <div class="main clearfix">
+        <div class="container">
+            <div class="header">
+                <h1>Axola Lose</h1>
+                <img src="axola.jpg" style="width:400px; height: 400px;">
+                <div class="right">
+                    <button onclick="window.location.href = 'my-webpage.html'">my webpage</button>
+                    <button onclick="window.location.href = 'my-webpage grid.html'">my webpage grid</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
